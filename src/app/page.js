@@ -13,21 +13,26 @@ export default function Home() {
     <main className="flex min-h-screen m-auto items-center justify-center bg-gradient-to-b from-rose-400 to-rose-200 text-center p-10 flex-col">
       <div className="flex flex-col items-center justify-center">
         <div className="font-medium text-6xl ">
-          <h1>{`Chúc mừng ngày Phụ nữ Việt Nam`}</h1>
-          <h1 className="text-red-600">20-10</h1>
+          <h1 className="text-red-600 font-bold animate-smoothAppear5s">{`Chúc mừng ngày Phụ nữ Việt Nam`}</h1>
+          <h1 className="text-red-600 animate-smoothAppear5s">20-10</h1>
         </div>
-        <p className="text-4xl mt-4">Cậu có thư nhé!</p>
-        <Image
-          src="/heart.png"
-          alt="heart-icon"
-          width={64}
-          height={64}
-          onClick={handleClickButton}
-          className="cursor-pointer animate-bounce mt-4"
-        />
+        <p className="text-4xl mt-4 animate-smoothAppear7s">Cậu có thư nhé!</p>
+        <div className="animate-smoothAppear7s">
+          <Image
+            src="/heart.png"
+            alt="heart-icon"
+            width={64}
+            height={64}
+            onClick={handleClickButton}
+            className="cursor-pointer animate-bounce mt-4"
+          />
+        </div>
       </div>
       {showLetter && (
-        <div className="text-2xl text-left pl-5">
+        <div
+          className="text-2xl text-left pl-5 animate-smoothAppear5s"
+          id="letter"
+        >
           <p>Gửi Cậu</p>
           <p>
             Ngày hôm nay của cậu thế nào nhỉ? Chắc là vẫn đi làm, vẫn về nhà,
@@ -45,8 +50,10 @@ export default function Home() {
             Cũng muốn gửi tặng cậu 1 điều gì đấy cho bất ngờ, nhưng mà ở xa quá
             nên không kịp gửi, nên là mình viết vài dòng code này tặng cậu :v
           </p>
-          <p>Mong cậu sẽ vui nhá ^^</p>
-          <p>Luôn luôn vui vẻ, luôn luôn xinh đẹp, luôn luôn hạnh phúc nhá</p>
+          <p>Mong cậu sẽ vui nhá 🥰</p>
+          <p>
+            Luôn luôn vui vẻ, luôn luôn xinh đẹp, luôn luôn hạnh phúc nhá ❤️
+          </p>
           <div className="text-right mt-3">
             <p className="font-bold">Thân gửi</p>
             <p className="text-xl">V.V.H</p>

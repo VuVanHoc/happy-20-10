@@ -7,6 +7,9 @@
   --background-start-rgb: #ffc8dd;
   --background-end-rgb: #ffafcc;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: rgb(var(--foreground-rgb));

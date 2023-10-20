@@ -31,9 +31,19 @@ module.exports = {
             borderColor: "white",
           },
         },
+        smoothAppear: {
+          "0%": {
+            opacity: 0,
+          },
+          "100%": {
+            opacity: 1,
+          },
+        },
       },
       animation: {
         typing: "typing 1s steps(20) infinite, blink .7s infinite",
+        smoothAppear5s: "smoothAppear 5s",
+        smoothAppear7s: "smoothAppear 7s",
       },
     },
   },
